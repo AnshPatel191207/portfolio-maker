@@ -38,3 +38,18 @@
 .export-btn:hover {
   background: #0ea5e9;
 }
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+}

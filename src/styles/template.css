@@ -95,3 +95,22 @@
 .minimal-template {
   margin: auto;
 }
+
+/* Templates responsive */
+@media (max-width: 768px) {
+  .template-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Preview templates responsive */
+@media (max-width: 768px) {
+  .modern-template,
+  .minimal-template {
+    padding: 25px;
+  }
+
+  .modern-header h1 {
+    font-size: 26px;
+  }
+}

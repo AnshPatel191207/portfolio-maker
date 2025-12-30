@@ -1,3 +1,18 @@
+/* Global reset & responsive base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -37,7 +52,14 @@ body.dark {
   min-height: 100vh;
   padding: 80px 20px;
   background: linear-gradient(to right, #020617, #0f172a);
-  color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page-bg {
+    padding: 60px 15px;
+  }
 }
 
 .page-nav-btn {
@@ -46,4 +68,11 @@ body.dark {
   font-weight: 600;
   cursor: pointer;
   font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .export-btn {
+    width: 100%;
+    text-align: center;
+  }
 }

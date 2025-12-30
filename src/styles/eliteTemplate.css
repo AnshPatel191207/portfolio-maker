@@ -34,6 +34,7 @@
   margin-bottom: 25px;
   border-left: 6px solid #6366f1;
   padding-left: 15px;
+  color: black;
 }
 
 .elite-skills span {
@@ -106,4 +107,15 @@
 
 .elite-wrapper {
   margin: auto;
+}
+
+/* Elite responsive */
+@media (max-width: 768px) {
+  .elite-container {
+    padding: 30px 20px;
+  }
+
+  .elite-header h1 {
+    font-size: 28px;
+  }
 }

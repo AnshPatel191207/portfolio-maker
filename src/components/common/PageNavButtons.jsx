@@ -5,7 +5,9 @@ const PageNavButtons = ({ onBack, onNext, nextLabel = "Next" }) => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        marginTop: "50px"
+        gap: "15px",
+        marginTop: "50px",
+        flexWrap: "wrap"
       }}
     >
       {/* Back Button */}

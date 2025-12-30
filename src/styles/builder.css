@@ -60,3 +60,19 @@
 .form-card button:hover {
   background: #0ea5e9;
 }
+
+/* Builder responsive */
+@media (max-width: 768px) {
+  .forms {
+    padding: 30px 20px;
+  }
+
+  .form-card h2 {
+    font-size: 20px;
+  }
+
+  .form-card input,
+  .form-card textarea {
+    font-size: 14px;
+  }
+}
