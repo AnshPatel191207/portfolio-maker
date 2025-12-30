@@ -1,7 +1,9 @@
 import { useContext } from "react";
 import { PortfolioContext } from "../context/PortfolioContext";
 import "../styles/template.css";
+import BackButton from "../components/common/BackButton";
 import NextButton from "../components/common/NextButton";
+import PageNavButtons from "../components/common/PageNavButtons";
 
 const Templates = ({setPage}) => {
   const { template, setTemplate } = useContext(PortfolioContext);
@@ -39,10 +41,12 @@ const Templates = ({setPage}) => {
           <p>Premium & standout design</p>
         </div>
       </div>
-      <NextButton
-  label="Preview Portfolio"
+      <PageNavButtons
+  onBack={() => setPage("builder")}
   onNext={() => setPage("preview")}
+  nextLabel="Preview Portfolio"
 />
+
     </div>
   );
 };

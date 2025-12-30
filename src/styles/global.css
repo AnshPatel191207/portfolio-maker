@@ -39,3 +39,11 @@ body.dark {
   background: linear-gradient(to right, #020617, #0f172a);
   color: rgb(0, 0, 0);
 }
+
+.page-nav-btn {
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+}
